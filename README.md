@@ -15,16 +15,18 @@ um convite personalizado por e-mail, com o nome do participante impresso na imag
 ![Web 4](https://github.com/GuilhermeGTM/Envia_convite_Email_Assincrono/blob/main/img_git/imagem/4.png)
 
 
-# Tecnologias utilizadas
+# 🧰 Tecnologias Utilizadas
 
-Tecnologia	    Finalidade
-Python	        Linguagem principal para backend e automações
-Django	        Framework web para estruturação do projeto e gerenciamento de modelos/views
-Celery	        Gerenciamento de tarefas assíncronas (envio de e-mails em background)
-Redis	        Broker para fila de tarefas do Celery
-Pillow(PIL)	    Manipulação de imagens para gerar convites personalizados
-SMTP (Email)	Envio de e-mails com imagem embutida no corpo
-HTML/CSS	    Formatação do corpo do e-mail com layout visual
+| Tecnologia    | Finalidade                                                                 |
+|---------------|----------------------------------------------------------------------------|
+| **Python**    | Linguagem principal para backend e automações                              |
+| **Django**    | Framework web para estruturação do projeto e gerenciamento de modelos/views|
+| **Celery**    | Gerenciamento de tarefas assíncronas (envio de e-mails em background)      |
+| **Redis**     | Broker para fila de tarefas do Celery                                      |
+| **Pillow (PIL)** | Manipulação de imagens para gerar convites personalizados              |
+| **SMTP (Email)** | Envio de e-mails com imagem embutida no corpo                          |
+| **HTML/CSS**  | Formatação do corpo do e-mail com layout visual                            |
+
 
 
 ## DB
