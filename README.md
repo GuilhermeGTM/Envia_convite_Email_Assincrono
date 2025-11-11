@@ -1,7 +1,7 @@
 #  Sistema de Inscrição com Geração e Envio de Convite Personalizado
 
 # Sobre o projeto
-Desenvolver uma aplicação web que permite a inscrição de usuários em um evento e envia automaticamente
+Uma aplicação web que permite a inscrição de usuários em um evento e envia automaticamente
 um convite personalizado por e-mail, com o nome do participante impresso na imagem do convite.
   
 
@@ -32,28 +32,23 @@ um convite personalizado por e-mail, com o nome do participante impresso na imag
 ## DB
 - SQLite3
 
-## Implantação em produção
-🧠 Funcionalidades
+## 🧠 Funcionalidades
 
-    Formulário de inscrição: Interface simples para o usuário informar nome e e-mail.
+- **Formulário de inscrição**  
+  Interface simples para o usuário informar nome e e-mail.
 
-    Persistência de dados: Armazena os dados do inscrito em um modelo Pessoa.
+- **Persistência de dados**  
+  Armazena os dados do inscrito em um modelo `Pessoa`.
 
-    Geração de convite:
+- **Geração de convite**
+  - Utiliza uma imagem base (`convite.png`) como template.
+  - Escreve o nome do participante na imagem usando Pillow.
+  - Salva o convite em `media/convites/{token}.png` com nome criptografado.
 
-        Utiliza uma imagem base (convite.png) como template.
-
-        Escreve o nome do participante na imagem usando Pillow.
-
-        Salva o convite em media/convites/{token}.png com nome criptografado.
-
-    Envio automático de e-mail:
-
-        E-mail enviado via Celery para não bloquear a requisição.
-
-        Corpo do e-mail em HTML com imagem embutida (cid) para visualização direta.
-
-        Alternativa de envio com imagem como anexo também disponível.
+- **Envio automático de e-mail**
+  - E-mail enviado via Celery para não bloquear a requisição.
+  - Corpo do e-mail em HTML com imagem embutida (`cid`) para visualização direta.
+  - Alternativa de envio com imagem como anexo também 
 
 # Como executar o projeto
 
