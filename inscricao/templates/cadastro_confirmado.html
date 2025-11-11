@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Cadastro Confirmado{% endblock title %}
+
+{% block body %}
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="text-center">
+            <div class="alert alert-success shadow-sm p-4">
+                <h1 class="mb-3">✅ Cadastro confirmado com sucesso!</h1>
+                <p class="lead">Em instantes você receberá um e-mail com seu convite personalizado.</p>
+            </div>
+            <a href="{% url 'inscricao' %}" class="btn btn-outline-primary mt-3">Voltar para inscrição</a>
+        </div>
+    </div>
+{% endblock body %}
+
+   

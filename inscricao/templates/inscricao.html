@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Inscrição{% endblock title %}
+{% block body %}
+
+    {% if erros %}
+    <div class="alert alert-danger">
+        <ul>
+            {% for erro in erros %}
+                <li>{{ erro }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card p-4 shadow" style="width: 100%; max-width: 400px;">
+            <h4 class="text-center mb-4">Formulário de Inscrição</h4>
+            <form action="{% url 'processa_inscricao' %}" method="POST">
+                {% csrf_token %}
+                
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome" required value="{{ nome|default:'' }}">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Digite o e-mail" required value="{{ email|default:'' }}">
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock body %}
