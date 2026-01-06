@@ -1,9 +1,12 @@
 #  Sistema de Inscrição com Geração e Envio de Convite Personalizado
 
+---
+
 # Sobre o projeto
 Uma aplicação web que permite a inscrição de usuários em um evento e envia automaticamente
 um convite personalizado por e-mail, com o nome do participante impresso na imagem do convite.
   
+---
 
 ## Layout web
 ![Web 1](https://github.com/GuilhermeGTM/Envia_convite_Email_Assincrono/blob/main/img_git/imagem/1.png)
@@ -14,6 +17,7 @@ um convite personalizado por e-mail, com o nome do participante impresso na imag
 
 ![Web 4](https://github.com/GuilhermeGTM/Envia_convite_Email_Assincrono/blob/main/img_git/imagem/4.png)
 
+---
 
 # 🧰 Tecnologias Utilizadas
 
@@ -27,12 +31,14 @@ um convite personalizado por e-mail, com o nome do participante impresso na imag
 | **SMTP (Email)** | Envio de e-mails com imagem embutida no corpo                          |
 | **HTML/CSS**  | Formatação do corpo do e-mail com layout visual                            |
 
-
+---
 
 ## DB
 - SQLite3
 
-## 🧠 Funcionalidades
+---
+
+# 🧠 Funcionalidades
 
 - **Formulário de inscrição**  
   Interface simples para o usuário informar nome e e-mail.
@@ -50,7 +56,9 @@ um convite personalizado por e-mail, com o nome do participante impresso na imag
   - Corpo do e-mail em HTML com imagem embutida (`cid`) para visualização direta.
   - Alternativa de envio com imagem como anexo também 
 
-# Como executar o projeto
+---
+
+## Como executar o projeto
 
 ```bash
 instalar o venv na pasta do projeto
@@ -62,6 +70,8 @@ baixando as dependencias
 --->python manage.py migrate
 -->python manage.py runserver
 ```
+
+---
 
 # Autor
 
